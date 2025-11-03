@@ -55,37 +55,6 @@ Then open the local URL displayed (usually <http://localhost:8501>) to view the 
 
 ---
 
-## 📁 Project Structure
-
-```
-.
-├── streamlit_pv_curtailment.py     # Main Streamlit application
-├── solarsystem.py                  # Local solar system model (custom functions)
-├── 15min_pow_2024.csv              # Input dataset (15-min measured data)
-├── curtailement roots.jpg          # Illustration image
-├── results.jpg                     # Summary image
-└── README.md                       # You are here
-```
-
----
-
-## 📊 Data Description
-
-The app uses a CSV file (`15min_pow_2024.csv`) containing time-series data:
-
-| Column name | Description | Unit |
-|--------------|--------------|------|
-| `Time` | Timestamp (15-min interval) | ISO datetime |
-| `15min mean Solar power (ALL) [kW]` | Measured PV power | kW |
-| `15min mean System Pout Consumption power (ALL) [kW]` | Consumption at the AC output | kW |
-
-The app automatically computes:
-- Clipping losses (%)
-- Lost energy (kWh/day and kWh/month)
-- Remaining self-consumed energy  
-
----
-
 ## 🧩 Simulation Logic
 
 | Case | Description | What happens |
@@ -100,7 +69,7 @@ The app automatically computes:
 
 | Simulation | Example Output |
 |-------------|----------------|
-| Input section | <img src="curtailement roots.jpg" width="400"/> |
+| Input section | <img src="curtailment roots.jpg" width="400"/> |
 | Results summary | <img src="results.jpg" width="400"/> |
 
 ---
